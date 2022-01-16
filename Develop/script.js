@@ -6,11 +6,14 @@ function generatePassword() {
 
   //prompt user for password criteria
   // a - between 8 and 128 defined as "input"
+  //remember to validate this to numbers between 1-128
   var input = prompt ("Please enter the number of characters you prefer (you may select between 8-120 characters).");
   console.log(input);
 
   // b - lower upper number special
-
+  // declare array for character types
+  // lower, upper, special = string, + number
+  var charType = ["lower", "upper", "number", "special"];
 
   //validate the input (above)
   //user "input" must be 8-128 characters
