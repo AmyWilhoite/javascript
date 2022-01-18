@@ -3,13 +3,13 @@
 
 ## Overview
 
-This project modifys starter code to create an ampplication for employees to generate random passwords that include special characters. 
+This project modifies starter code to create an application for employees to generate random passwords that include special characters. 
 This will feature dynamically updated HTML and CSS powered by Javascript. 
 <BR>
 
 ## Design
   
-This app allows employess with sensitive data to create secure passwords to increase security of confidential information. 
+This app allows employees with sensitive data to create secure passwords to increase security of confidential information. 
 
 This app can:
 Assist employees who need a new, secure password
