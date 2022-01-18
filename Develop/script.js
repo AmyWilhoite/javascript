@@ -73,7 +73,7 @@ console.log("keystore", keystroke);
 
    console.log(listOfCharacters);
 
-
+ 
    for(var index = 0; index < userinput; index++){
     console.log("Loop running", index ); 
     //generate a random index from the list of characters allowed based on the confirm boxes 

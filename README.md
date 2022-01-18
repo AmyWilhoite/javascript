@@ -25,8 +25,8 @@ Assist employees who need a new, secure password
 
 ## Preview
   
-![Screenshot](./assets/Preview.png)
+![Screenshot](./03-javascript-homework-demo.png)
 
 ## Links
-* https://github.com/AmyWilhoite/homework2.git
-* https://github.com/AmyWilhoite/homework2
+* Public Page: https://amywilhoite.github.io/javascript/
+* Repository: https://github.com/AmyWilhoite/javascript
