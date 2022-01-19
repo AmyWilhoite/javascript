@@ -3,7 +3,7 @@
 var generateBtn = document.querySelector("#generate");
 
 //We're supposed to write a function to generate password
-//i wrote this function here to satisfy logic requirements for project
+//I wrote this function here to satisfy logic requirements for project
 function generatePassword (){
  
   var keystroke = {
@@ -21,21 +21,28 @@ console.log("keystore", keystroke);
   console.log("confirmation page works");
 
   // prompted user to enter values
-  var userinput = parseInt(prompt ("enter the number of characters for your password between 1-128"));
+  var userinput = parseInt(prompt ("Please enter the number of characters for your password between 1-128"));
+  // We validate the userinput to confirm it is a numerical value
+  while (!/^[0-9]+$/.test(userinput)) {
+    alert("You did not enter a number, please try again");
+    userinput = prompt("Please enter the number of characters for your password between 1-128");
+  }
   console.log (userinput,[]);
   console.log (userinput, length);
  
   // write a condition for min length and max length of password
   // todo: need to set a reset page if outside range
-  if (userinput < 8) {
-  alert ("ERROR ALERT!!! Must start over and enter value greater than 8");
+  if  (userinput < 8 ) {
+    alert ("ERROR ALERT!!! Must start over and enter value greater than 8");
   } else if (userinput > 128) {
   alert ("ERROR ALERT!!! Must start over and enter value less than 128"); 
-  } else { 
+  } 
+  else { 
   console.log(userinput);
   }
 
   // 1 of 4 confirm boxes (must confirm at least 1 of 4)
+  // try a for loop here to re-run code until proper entries
    var allowNumbers = confirm("Would you like to include numbers ?"); 
    console.log("allow Numbers ", allowNumbers);
 
@@ -70,9 +77,13 @@ console.log("keystore", keystroke);
    if(allowSymbolCase === true){
     listOfCharacters = listOfCharacters + keystroke.symbol; 
    }
+   else if (allowSymbolCase === false) {
+      alert ("You must select at least 1 of the 4 conditions");
+    }
 
    console.log(listOfCharacters);
 
+   // need to write an error message if false is selected each time
  
    for(var index = 0; index < userinput; index++){
     console.log("Loop running", index ); 
@@ -85,7 +96,6 @@ console.log("keystore", keystroke);
 
     //append the random letters every time the loop runs 
     result = result+randomLetter;
-
 
    }
   
